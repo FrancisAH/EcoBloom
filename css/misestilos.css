@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8ebcb;
+}
+
+#agrupar {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: left;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.idioma-selector {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.idioma-selector button {
+    cursor: pointer;
+    background-color: #8deb90;
+    border-color: #4CAF50;
+    border-radius: 20px;
+    font-size: 85%;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2d6d21;
+}
+
+
+
+
+/*Menu*/
+
+#menu{
+    background: rgba(35, 126, 45, 0.774);
+    padding: 1%;
+    margin: 3%;
+}
+
+#menu li, #menu ul, #menu a {
+    display: inline;
+    /* Acomoda en linea, no en bloques */
+    list-style: none;
+    /* Sin estilo de lista */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    padding: 1px;
+}
+
+#menu a{
+    text-decoration: none;
+}
+
+
+#menu > ul > li {
+    float: center;
+    margin: 4px;
+    position: relative;
+    color: aliceblue;
+    cursor: pointer;
+  }
+
+
+
+  #menu > ul > li > a:hover {color: #2f662f;}
+  #menu > ul > li > ul {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #3f7047;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    width: 160px;
+    -moz-transition: all .3s .1s;
+    -o-transition: all .3s .1s;
+    transition: all .3s .1s;
+    border-radius: 10px;
+  }
+
+  #menu > ul > li:hover > ul {
+    opacity: 1;
+    top: 25px;
+    visibility: visible;
+  }
+
+#menu > ul ul > li {position: relative;}
+#menu ul ul a {
+
+  font-size: 13px;
+  background-color: #619661a4;
+  padding: 1px;
+  margin: 2px;
+  display: block;
+  border-radius: 5px;
+  color: #ccc;
+}
+
+#menu ul ul a:hover {
+    color: #05310b;
+}
+
+
+
+
+
+#seccion {
+    margin-top: 40px;
+}
+
+.caja {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #b4ecb4;
+    background: #b3dbb3;
+}
+
+/* Sombras ligeras en las cajas */
+.caja, .flotante {
+    box-shadow: 0 3px 8px rgba(13, 112, 63, 0.788);
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.flotante {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #aaceaa;
+    background-color: #b7dab7;
+    margin-bottom: 20px;
+}
+
+.izquierda {
+    float: left;
+    margin-right: 5%;
+}
+
+.derecha {
+    float: right;
+}
+
+#pie {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    background: #e0e0e0;
+    color: #666;
+}

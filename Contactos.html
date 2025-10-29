@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ejemplo de html5">
+    <meta name="keywords" content="html5, css3, javascript">
+    <title>EcoBloom | Contactos</title>
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="icon" href="res/logoEcoOficial.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Boton -->
+    <div id="agrupar">
+        <header>
+            <img src="res/logoEcoOficial.jpg" alt="EcoBloom" class="logo">
+            <div class="idioma-selector">
+                <button onclick="cambiarIdioma('es')">Español</button>
+                <button onclick="cambiarIdioma('en')">English</button>
+            </div>
+        </header>
+
+
+
+    <!-- Menu -->
+       <nav id="menu">
+            <ul>
+                <li><span id="menuC">Menú</span>
+                    <ul>
+                        <li><a href="index.html" id="inicio">Página Principal</a></li>
+                        <li><a href="Productos.html" id="productos">Productos</a></li>
+                        <li><a href="Galeria.html" id="galeria">Galería</a></li>
+                        <li><a href="Contactos.html" id="contacto">Contacto</a></li>
+                        <li><a href="Informacion.html" id="informacion">Información</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Links -->
+        <a href="https://wa.me/50672470049"> <img src="res/whatsapp-line.png" style="width: 50px; height: 50px;"></a>
+        <a href="mailto:mariangelmadriovi2008@gmail.com"> <img src="res/mail-line.png" style="width: 50px; height: 50px;"></a>
+        
+        
+        <h3 id="info">¡Contáctanos y te ayudamos!</h3>
+        <footer id="pie">
+            &copy; Mariangel, Francis, Jonathan 11-1, 2025
+        </footer>
+    </div>
+
+
+
+    <!-- Traduccion -->
+    <script>
+        function cambiarIdioma(idioma) {
+            if (idioma === 'es') {
+                document.getElementById("menuC").innerText = "Menú";
+                document.getElementById("info").innerText = "¡Contáctanos y te ayudamos!";
+                document.getElementById("inicio").innerText = "Página Principal";
+                document.getElementById("productos").innerText = "Productos";
+                document.getElementById("galeria").innerText = "Galería";
+                document.getElementById("contacto").innerText = "Contacto";
+                document.getElementById("informacion").innerText = "Información";
+            } else if (idioma === 'en') {
+                document.getElementById("menuC").innerText = "Menu";
+                document.getElementById("info").innerText = "Contact us and we'll help you!";
+                document.getElementById("inicio").innerText = "Home";
+                document.getElementById("productos").innerText = "Products";
+                document.getElementById("galeria").innerText = "Gallery";
+                document.getElementById("contacto").innerText = "Contact";
+                document.getElementById("informacion").innerText = "Information";
+            }
+        }
+    </script>
+
+</body>
+</html>

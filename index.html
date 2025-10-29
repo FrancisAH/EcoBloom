@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ejemplo de html5">
+    <meta name="keywords" content="html5, css3, javascript">
+    <title>EcoBloom</title>
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="icon" href="res/logoEcoOficial.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="agrupar">
+        <header>
+            <img src="res/logoEcoOficial.jpg" alt="EcoBloom" class="logo">
+            <div class="idioma-selector">
+                <button onclick="cambiarIdioma('es')">Español</button>
+                <button onclick="cambiarIdioma('en')">English</button>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <ul>
+                <li><span id="menuLabel">Menú</span>
+                    <ul>
+                        <li><a href="index.html" id="inicio">Página Principal</a></li>
+                        <li><a href="Productos.html" id="productosLink">Productos</a></li>
+                        <li><a href="Galeria.html" id="galeria">Galería</a></li>
+                        <li><a href="Contactos.html" id="contacto">Contacto</a></li>
+                        <li><a href="Informacion.html" id="informacion">Información</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <img src="res/Promocional.png" style="width: 50%; height: 90%; margin-left: 25%;">
+
+        <section id="seccion">
+            <article class="caja">
+                <h2 id="titulo">EcoBloom: Belleza Natural</h2>
+                <p id="descripcion">Un producto 100% orgánico para el cuidado de tu piel y bienestar.</p>
+            </article>
+
+            <div class="flotante izquierda">
+                <h3 id="benef1">Hidratación Profunda</h3>
+                <p id="benef1desc">Penetra en las capas de la piel para una nutrición completa.</p>
+            </div>
+
+            <div class="flotante derecha">
+                <h3 id="benef2">Aroma Natural</h3>
+                <p id="benef2desc">Delicada fragancia sin químicos artificiales.</p>
+            </div>
+
+           
+
+        <footer id="pie">
+            &copy; Mariangel, Francis, Jonathan 11-1, 2025
+        </footer>
+    </div>
+
+    <script src="js/idioma.js"></script>
+</body>
+</html>
